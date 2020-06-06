@@ -14,9 +14,15 @@ const AppHeader = ({ selectedKey }) => {
 
   return (
     <Header className={styles.navbar}>
-      <Row justify="space-between">
+      <Row
+        justify="space-between"
+        align="middle"
+        gutter={{ sm: 0, md: 24, lg: 8 }}
+      >
         <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 4 }}>
-          <img src="/vercel.svg" width={128} alt="Brand Logo" />
+          <Row justify="center">
+            <img src="/vercel.svg" width={128} alt="Brand Logo" />
+          </Row>
         </Col>
         <Col xs={{ span: 0 }} sm={{ span: 0 }} md={{ span: 20 }}>
           <Menu
