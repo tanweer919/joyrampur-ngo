@@ -1,0 +1,17 @@
+.navbar {
+  background: white;
+  flex-flow: nowrap;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+.menu {
+  border-bottom: none;
+}
+.menuItem:hover {
+  border-top: 2px solid #1890ff;
+}
+.menu-item:hover {
+  border-bottom: none !important;
+}
