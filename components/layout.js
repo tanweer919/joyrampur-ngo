@@ -5,7 +5,12 @@ const Layout = ({ children, selectedKey }) => {
   return (
     <>
       <AppHeader selectedKey={selectedKey} />
-      {children}
+      <div className="content">{children}</div>
+      <style jsx>{`
+        .content {
+          padding-top: 64px;
+        }
+      `}</style>
     </>
   );
 };
