@@ -15,3 +15,13 @@
   color: black;
   font-size: 1.1rem;
 }
+.menuItem.menuItemHome a {
+  color: white !important;
+}
+.navbar.navbarHome {
+  background: transparent;
+  box-shadow: none;
+}
+.menu.menuHome {
+  background: transparent;
+}

@@ -13,7 +13,11 @@ const AppHeader = ({ selectedKey }) => {
   const { Header } = Layout;
 
   return (
-    <Header className={styles.navbar}>
+    <Header
+      className={
+        styles.navbar + (selectedKey == "0" ? ` ${styles.navbarHome}` : "")
+      }
+    >
       <Row
         justify="space-between"
         align="middle"
@@ -28,11 +32,20 @@ const AppHeader = ({ selectedKey }) => {
           <Menu
             mode="horizontal"
             selectedKeys={[`${selectedKey}`]}
-            className={styles.menu}
+            className={
+              styles.menu + (selectedKey == "0" ? ` ${styles.menuHome}` : "")
+            }
             justify="space-between"
           >
             {navLinks.map((navLink, i) => (
-              <Menu.Item key={i} md={{ span: 5 }} className={styles.menuItem}>
+              <Menu.Item
+                key={i}
+                md={{ span: 5 }}
+                className={
+                  styles.menuItem +
+                  (selectedKey == "0" ? ` ${styles.menuItemHome}` : "")
+                }
+              >
                 <Link href={navLink.link}>
                   <a>{navLink.title}</a>
                 </Link>
