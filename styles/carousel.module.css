@@ -1,3 +1,8 @@
 .carouselImage {
   height: 80vh;
 }
+@media only screen and (max-width: 768px) {
+  .carouselImage {
+    height: 50vh;
+  }
+}

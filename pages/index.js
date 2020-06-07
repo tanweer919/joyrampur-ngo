@@ -5,10 +5,15 @@ import Services from "../components/services";
 
 const Home = () => {
   return (
-    <Layout selectedKey={0}>
-      <CarouselHome />
-      <Services />
-    </Layout>
+    <>
+      <Head>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
+      <Layout selectedKey={0}>
+        <CarouselHome />
+        <Services />
+      </Layout>
+    </>
   );
 };
 

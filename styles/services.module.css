@@ -10,18 +10,23 @@
   padding: 0 20px;
 }
 .cardSection {
-  padding: 0 60px;
+  padding: 0 10vw;
 }
 .cardRow {
-  flex-wrap: nowrap;
   height: 100%;
 }
 .cardImage {
   padding: 10px;
 }
+.images {
+  min-width: 50px;
+  max-width: 150px;
+  height: auto;
+}
 .cardContent {
   padding: 20px;
   flex-direction: column;
+  text-align: center;
 }
 .cardContentTitle {
   font-size: 18px;

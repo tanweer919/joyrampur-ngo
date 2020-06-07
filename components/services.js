@@ -85,13 +85,9 @@ const Services = () => {
         {services.map((service, i) => (
           <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 12 }} key={i}>
             <Card hoverable className={styles.cards}>
-              <Row
-                justify="space-between"
-                align="middle"
-                className={styles.cardRow}
-              >
+              <Row justify="center" align="middle" className={styles.cardRow}>
                 <Col className={styles.cardImage}>
-                  <img src={service.imageUrl} width="150px"></img>
+                  <img src={service.imageUrl} className={styles.images}></img>
                 </Col>
                 <Col>
                   <Row

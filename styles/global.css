@@ -1,9 +1,9 @@
 @import "~antd/dist/antd.css";
 #carousel {
-  min-width: 100vh;
+  min-width: 100vw;
   object-fit: cover;
 }
 .sections {
   margin-top: 30px;
-  min-width: 100vh;
+  width: 100vw;
 }
