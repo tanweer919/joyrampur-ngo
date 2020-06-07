@@ -3,7 +3,7 @@ import { Row, Col, Menu, Layout } from "antd";
 import Link from "next/link";
 import styles from "../styles/header.module.css";
 
-const AppHeader = ({ selectedKey }) => {
+const AppHeader = ({ selectedKey, navbarHome, menuHome, menuItemHome }) => {
   const navLinks = [
     { title: "Home", link: "/" },
     { title: "About", link: "/about" },
@@ -14,9 +14,7 @@ const AppHeader = ({ selectedKey }) => {
 
   return (
     <Header
-      className={
-        styles.navbar + (selectedKey == "0" ? ` ${styles.navbarHome}` : "")
-      }
+      className={styles.navbar + (navbarHome ? ` ${styles.navbarHome}` : "")}
     >
       <Row
         justify="space-between"
@@ -32,9 +30,7 @@ const AppHeader = ({ selectedKey }) => {
           <Menu
             mode="horizontal"
             selectedKeys={[`${selectedKey}`]}
-            className={
-              styles.menu + (selectedKey == "0" ? ` ${styles.menuHome}` : "")
-            }
+            className={styles.menu + (menuHome ? ` ${styles.menuHome}` : "")}
             justify="space-between"
           >
             {navLinks.map((navLink, i) => (
@@ -43,7 +39,7 @@ const AppHeader = ({ selectedKey }) => {
                 md={{ span: 5 }}
                 className={
                   styles.menuItem +
-                  (selectedKey == "0" ? ` ${styles.menuItemHome}` : "")
+                  (menuItemHome ? ` ${styles.menuItemHome}` : "")
                 }
               >
                 <Link href={navLink.link}>

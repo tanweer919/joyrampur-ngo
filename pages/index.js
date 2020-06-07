@@ -13,6 +13,14 @@ const Home = () => {
           <img src="/banner.png"></img>
         </Carousel>
       </div>
+      <div className="carousel">
+        <Carousel autoplay>
+          <img src="/gallery1.jpg"></img>
+          <img src="/gallery2.jpg"></img>
+          <img src="/gallery3.jpg"></img>
+          <img src="/banner.png"></img>
+        </Carousel>
+      </div>
       <style jsx>{`
         .carousel {
           min-width: 100vh;
