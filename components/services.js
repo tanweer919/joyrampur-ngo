@@ -1,6 +1,7 @@
 import React from "react";
-import { Row, Col, Card } from "antd";
+import { Row } from "antd";
 import styles from "../styles/services.module.css";
+import Service from "./service";
 
 const Services = () => {
   const services = [
@@ -83,29 +84,7 @@ const Services = () => {
         className={styles.cardSection}
       >
         {services.map((service, i) => (
-          <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 12 }} key={i}>
-            <Card hoverable className={styles.cards}>
-              <Row justify="center" align="middle" className={styles.cardRow}>
-                <Col className={styles.cardImage}>
-                  <img src={service.imageUrl} className={styles.images}></img>
-                </Col>
-                <Col>
-                  <Row
-                    className={styles.cardContent}
-                    justify="space-around"
-                    align="middle"
-                  >
-                    <Col className={styles.cardContentTitle}>
-                      {service.title}
-                    </Col>
-                    <Col className={styles.cardContentDescription}>
-                      {service.description}
-                    </Col>
-                  </Row>
-                </Col>
-              </Row>
-            </Card>
-          </Col>
+          <Service service={service} id={i} />
         ))}
       </Row>
     </section>

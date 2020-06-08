@@ -1,0 +1,29 @@
+.projectsHeading {
+  font-size: 30px;
+  font-weight: 500;
+}
+.projectsSubheading {
+  font-size: 18px;
+  font-weight: 300;
+  color: #a9a9a9;
+  text-align: center;
+  padding: 0 20px;
+}
+.cardSection {
+  padding: 0 10vw;
+}
+.projectCard {
+  width: 25vw;
+}
+
+@media only screen and (max-width: 768px) {
+  .projectCard {
+    width: 70vw;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .projectCard {
+    width: 35vw;
+  }
+}
