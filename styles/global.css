@@ -4,6 +4,9 @@
   object-fit: cover;
 }
 .sections {
-  margin-top: 30px;
+  padding-top: 30px;
   width: 100vw;
+}
+#projects {
+  background-color: #0e304c;
 }

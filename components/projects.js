@@ -54,13 +54,13 @@ const Projects = () => {
         </p>
       </Row>
       <Row
-        justify="space-around"
+        justify="center"
         align="middle"
         gutter={[{ sm: 0, md: 96, lg: 96 }, 48]}
         className={styles.cardSection}
       >
         {projects.map((project, i) => (
-          <Project project={project} id={i} />
+          <Project project={project} key={i} />
         ))}
       </Row>
     </section>

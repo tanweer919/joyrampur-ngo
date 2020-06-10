@@ -1,11 +1,12 @@
 .projectsHeading {
   font-size: 30px;
   font-weight: 500;
+  color: white;
 }
 .projectsSubheading {
   font-size: 18px;
   font-weight: 300;
-  color: #a9a9a9;
+  color: #afafaf;
   text-align: center;
   padding: 0 20px;
 }
@@ -14,6 +15,10 @@
 }
 .projectCard {
   width: 25vw;
+}
+
+.projectCard:global(.ant-card-bordered) {
+  border: 0;
 }
 
 @media only screen and (max-width: 768px) {

@@ -1,0 +1,72 @@
+.galleryHeading {
+  font-size: 30px;
+  font-weight: 500;
+}
+.gallerySubheading {
+  font-size: 18px;
+  font-weight: 300;
+  color: #a9a9a9;
+  text-align: center;
+  padding: 0 20px;
+  border-radius: 20%;
+}
+.galleryCards {
+  width: 17vw;
+  padding: 0;
+  border: 0;
+  border-radius: 40px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+.cardSection {
+  padding: 0 15vw;
+}
+.galleryCards :global(.ant-card-body) {
+  padding: 0;
+}
+:global(.ant-card-cover) img.image {
+  border-radius: 4%;
+}
+.galleryModal :global(.ant-modal-footer) {
+  display: none;
+}
+.galleryModal :global(.ant-modal-body) {
+  padding: 0;
+}
+.modalImage {
+  width: 100%;
+}
+.galleryModal :global(.ant-modal-close-x) {
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .galleryCards {
+    width: 30vw;
+  }
+  .galleryModal {
+    margin-top: 5vh;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .galleryCards {
+    width: 20vw;
+  }
+  .galleryModal {
+    margin-top: 10vh;
+    margin-left: 15vw;
+  }
+  .galleryModal :global(.ant-modal-content) {
+    width: 70vw;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .galleryModal {
+    margin-top: 10vh;
+    margin-left: 25vw;
+  }
+  .galleryModal :global(.ant-modal-content) {
+    width: 50vw;
+  }
+}

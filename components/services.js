@@ -84,7 +84,7 @@ const Services = () => {
         className={styles.cardSection}
       >
         {services.map((service, i) => (
-          <Service service={service} id={i} />
+          <Service service={service} key={i} />
         ))}
       </Row>
     </section>

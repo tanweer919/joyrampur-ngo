@@ -3,7 +3,7 @@ import Layout from "../components/layout";
 import CarouselHome from "../components/carouselHome";
 import Services from "../components/services";
 import Projects from "../components/projects";
-import Project from "../components/project";
+import Gallery from "../components/gallery";
 
 const Home = () => {
   return (
@@ -15,6 +15,7 @@ const Home = () => {
         <CarouselHome />
         <Services />
         <Projects />
+        <Gallery />
       </Layout>
     </>
   );
