@@ -1,7 +1,6 @@
 .navbar {
   background: #ffffff;
   flex-flow: nowrap;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.15);
   position: fixed;
   z-index: 1;
   width: 100%;

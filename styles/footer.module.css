@@ -1,0 +1,24 @@
+.footer {
+  background-color: #0e304c;
+  color: #efefef;
+  padding: 40px;
+}
+.description {
+  margin-top: 20px;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+.colHeading {
+  font-size: 25px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 10px;
+}
+.links a {
+  color: #efefef;
+  font-size: 17px;
+}
+.links a:hover {
+  color: #2a8ef7;
+}
