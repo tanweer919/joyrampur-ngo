@@ -41,7 +41,10 @@
 
 @media only screen and (max-width: 768px) {
   .galleryCards {
-    width: 30vw;
+    width: 60vw;
+  }
+  .cardSection {
+    padding: 0 20vw;
   }
   .galleryModal {
     margin-top: 5vh;

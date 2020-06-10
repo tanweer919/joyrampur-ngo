@@ -41,8 +41,8 @@ class Gallery extends Component {
         >
           {[...Array(8)].map((e, i) => (
             <Col
-              xs={{ span: 12 }}
-              sm={{ span: 12 }}
+              xs={{ span: 24 }}
+              sm={{ span: 24 }}
               md={{ span: 8 }}
               lg={{ span: 6 }}
               key={i}
