@@ -2,6 +2,7 @@
 #carousel {
   min-width: 100vw;
   object-fit: cover;
+  padding-top: 64px;
 }
 .sections {
   padding-top: 30px;

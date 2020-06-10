@@ -9,6 +9,7 @@
     "export": "next export"
   },
   "dependencies": {
+    "@ant-design/icons": "^4.2.1",
     "antd": "^4.3.2",
     "next": "^9.3.3",
     "react": "^16.13.0",

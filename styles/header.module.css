@@ -1,11 +1,14 @@
 .navbar {
-  background: white;
+  background: #ffffff;
   flex-flow: nowrap;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.15);
   position: fixed;
   z-index: 1;
   width: 100%;
   padding: 0;
+}
+.navbar :global(.ant-row) {
+  height: 100%;
 }
 .menu {
   border-bottom: none;
@@ -15,13 +18,10 @@
   color: black;
   font-size: 1.1rem;
 }
-.menuItem.menuItemHome a {
-  color: white !important;
+.navbarPopover :global(.ant-popover-inner-content) {
+  padding: 0;
+  width: 50vw;
 }
-.navbar.navbarHome {
-  background: transparent;
-  box-shadow: none;
-}
-.menu.menuHome {
-  background: transparent;
+.navbarPopover .menuItem:global(.ant-menu-item-selected) {
+  border-right: 3px solid #2a8ef7;
 }
