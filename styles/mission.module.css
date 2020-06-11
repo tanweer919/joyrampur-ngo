@@ -1,0 +1,15 @@
+.mission {
+  padding: 25px;
+  width: 70vw;
+  margin: 0 auto;
+  background-image: url(https://gw.alipayobjects.com/mdn/rms_08e378/afts/img/A*i1EySrFVZvAAAAAAAAAAAABkARQnAQ);
+  background-size: cover;
+}
+.missionHeading {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.missionDescription {
+  color: #697b8c;
+}
