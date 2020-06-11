@@ -6,40 +6,22 @@ import Project from "./project";
 const Projects = () => {
   const projects = [
     {
-      title: "Web Development",
+      title: "PMKVY CSSM (2018-2019)",
       description:
         "We teach small children about the naunces of web development ad its related fields. This project includes both frontend development and backend development.",
-      imageUrl: "/projects.png",
+      imageUrl: "/pmkvy.png",
     },
     {
-      title: "Web Development",
+      title: "UTKARSH BANGLA",
       description:
         "We teach small children about the naunces of web development ad its related fields. This project includes both frontend development and backend development.",
-      imageUrl: "/projects.png",
+      imageUrl: "/utkarsh.png",
     },
     {
-      title: "Web Development",
+      title: "NDLM(National Digital Literacy Mission)",
       description:
         "We teach small children about the naunces of web development ad its related fields. This project includes both frontend development and backend development.",
-      imageUrl: "/projects.png",
-    },
-    {
-      title: "Web Development",
-      description:
-        "We teach small children about the naunces of web development ad its related fields. This project includes both frontend development and backend development.",
-      imageUrl: "/projects.png",
-    },
-    {
-      title: "Web Development",
-      description:
-        "We teach small children about the naunces of web development ad its related fields. This project includes both frontend development and backend development.",
-      imageUrl: "/projects.png",
-    },
-    {
-      title: "Web Development",
-      description:
-        "We teach small children about the naunces of web development ad its related fields. This project includes both frontend development and backend development.",
-      imageUrl: "/projects.png",
+      imageUrl: "/ndlm.jpg",
     },
   ];
   return (
