@@ -13,3 +13,10 @@
 .missionDescription {
   color: #697b8c;
 }
+
+@media only screen and (max-width: 768px) {
+  .mission {
+  padding: 10px;
+  width: 85vw;
+  }
+}
