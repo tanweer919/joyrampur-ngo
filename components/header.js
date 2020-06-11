@@ -8,11 +8,12 @@ const AppHeader = ({ selectedKey }) => {
   const navLinks = [
     { title: "Home", link: "/" },
     { title: "About", link: "/about" },
-    {title: "Projects", link: "/#projects"},
+    { title: "Projects", link: "/#projects" },
     { title: "Contact", link: "/contact" },
   ];
 
   const { Header } = Layout;
+  const { SubMenu } = Menu;
 
   const content = (
     <div style={{ width: "100%" }}>
@@ -22,13 +23,33 @@ const AppHeader = ({ selectedKey }) => {
         className={styles.menu}
         justify="space-between"
       >
-        {navLinks.map((navLink, i) => (
-          <Menu.Item key={i} className={styles.menuItem}>
-            <Link href={navLink.link}>
-              <a>{navLink.title}</a>
-            </Link>
-          </Menu.Item>
-        ))}
+        {navLinks.map((navLink, i) =>
+          navLink.title == "About" ? (
+            <SubMenu title="About" key={i} className={styles.menuItem}>
+              <Menu.Item key={`${navLink.title}:1`}>
+                <Link href="/about#mission">
+                  <a>Our Mission</a>
+                </Link>
+              </Menu.Item>
+              <Menu.Item key={`${navLink.title}:2`}>
+                <Link href="/about#leaders">
+                  <a>Leadership Team</a>
+                </Link>
+              </Menu.Item>
+              <Menu.Item key={`${navLink.title}:3`}>
+                <Link href="/about#impact">
+                  <a>Our Impact</a>
+                </Link>
+              </Menu.Item>
+            </SubMenu>
+          ) : (
+            <Menu.Item key={i} className={styles.menuItem}>
+              <Link href={navLink.link}>
+                <a>{navLink.title}</a>
+              </Link>
+            </Menu.Item>
+          )
+        )}
       </Menu>
     </div>
   );
@@ -52,13 +73,33 @@ const AppHeader = ({ selectedKey }) => {
             className={styles.menu}
             justify="space-between"
           >
-            {navLinks.map((navLink, i) => (
-              <Menu.Item key={i} md={{ span: 5 }} className={styles.menuItem}>
-                <Link href={navLink.link}>
-                  <a>{navLink.title}</a>
-                </Link>
-              </Menu.Item>
-            ))}
+            {navLinks.map((navLink, i) =>
+              navLink.title == "About" ? (
+                <SubMenu title="About" key={i} className={styles.menuItem}>
+                  <Menu.Item key={`${navLink.title}:1`}>
+                    <Link href="/about#mission">
+                      <a>Our Mission</a>
+                    </Link>
+                  </Menu.Item>
+                  <Menu.Item key={`${navLink.title}:2`}>
+                    <Link href="/about#leaders">
+                      <a>Leadership Team</a>
+                    </Link>
+                  </Menu.Item>
+                  <Menu.Item key={`${navLink.title}:3`}>
+                    <Link href="/about#impact">
+                      <a>Our Impact</a>
+                    </Link>
+                  </Menu.Item>
+                </SubMenu>
+              ) : (
+                <Menu.Item key={i} md={{ span: 5 }} className={styles.menuItem}>
+                  <Link href={navLink.link}>
+                    <a>{navLink.title}</a>
+                  </Link>
+                </Menu.Item>
+              )
+            )}
           </Menu>
         </Col>
         <Col xs={{ span: 2 }} sm={{ span: 2 }} md={{ span: 0 }}>

@@ -66,8 +66,8 @@ const AppFooter = () => {
           lg={{ span: 6 }}
         >
           <div className={styles.colHeading}>QUICK LINKS</div>
-          {links.map((link) => (
-            <div className={styles.links}>
+          {links.map((link, i) => (
+            <div className={styles.links} key={i}>
               <Link href={link.url}>
                 <a>{link.title}</a>
               </Link>
@@ -81,8 +81,8 @@ const AppFooter = () => {
           lg={{ span: 6 }}
         >
           <div className={styles.colHeading}>CONTACT US</div>
-          {contacts.map((contact) => (
-            <div>
+          {contacts.map((contact, i) => (
+            <div key={i}>
               <span className={styles.contactIcon}>{contact.icon}</span>
               <span>{contact.contact}</span>
             </div>

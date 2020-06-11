@@ -1,17 +1,18 @@
 import React from "react";
 import Layout from "../components/layout";
-import { Row } from "antd";
+import { Row, Breadcrumb } from "antd";
+import { HomeOutlined } from "@ant-design/icons";
 const About = () => {
   return (
     <Layout selectedKey={1}>
-      <Row justify="space-around" align="middle" className="row">
-        <h1>About Page</h1>
-      </Row>
-      <style jsx>{`
-        .row {
-          min-height: 100vh;
-        }
-      `}</style>
+      <div className="breadcrumb">
+        <Breadcrumb>
+          <Breadcrumb.Item href="">
+            <HomeOutlined />
+          </Breadcrumb.Item>
+          <Breadcrumb.Item href="">About</Breadcrumb.Item>
+        </Breadcrumb>
+      </div>
     </Layout>
   );
 };
