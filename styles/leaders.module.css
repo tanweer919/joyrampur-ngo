@@ -1,0 +1,48 @@
+.leadersHeading {
+  font-size: 30px;
+  font-weight: 500;
+}
+.leadersSubheading {
+  font-size: 18px;
+  font-weight: 300;
+  color: #a9a9a9;
+  text-align: center;
+  padding: 0 20px;
+}
+.leaderRow {
+  flex-direction: column;
+}
+.avatar {
+  width: 15vw;
+  height: 15vw;
+}
+.leaderCard {
+  padding: 0;
+}
+.leadersRow {
+  padding: 0 10vw;
+}
+.leaderTitle {
+  font-size: 24px;
+  padding-top: 5px;
+  padding-bottom: 2px;
+}
+.leaderName {
+  color: #a0a5aa;
+  font-size: 16px;
+  font-weight: 400;
+}
+@media only screen and (max-width: 768px) {
+  .avatar {
+    width: 30vw;
+    height: 30vw;
+  }
+  .leadersRow {
+    padding: 0 20vw;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .leadersRow {
+    padding: 0 5vw;
+  }
+}

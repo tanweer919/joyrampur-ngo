@@ -1,8 +1,9 @@
 import React from "react";
 import Layout from "../components/layout";
-import { Row, Breadcrumb } from "antd";
+import { Breadcrumb } from "antd";
 import { HomeOutlined } from "@ant-design/icons";
 import Mission from "../components/mission";
+import Leaders from "../components/leaders";
 const About = () => {
   return (
     <Layout selectedKey={1}>
@@ -15,6 +16,7 @@ const About = () => {
         </Breadcrumb>
       </div>
       <Mission />
+      <Leaders />
     </Layout>
   );
 };
