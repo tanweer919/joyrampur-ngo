@@ -2,6 +2,17 @@
 html {
   scroll-behavior: smooth;
 }
+.section-heading {
+  font-size: 30px;
+  font-weight: 500;
+}
+.section-subheading {
+  font-size: 18px;
+  font-weight: 300;
+  color: #a9a9a9;
+  text-align: center;
+  padding: 0 20px;
+}
 #carousel {
   min-width: 100vw;
   object-fit: cover;

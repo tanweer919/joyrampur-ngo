@@ -25,10 +25,10 @@ const Leaders = () => {
   ];
   return (
     <section id="leaders" className="sections">
-      <Row justify="center" className={styles.leadersHeading}>
+      <Row justify="center" className="section-heading">
         <p>Leadership Team</p>
       </Row>
-      <Row justify="center" className={styles.leadersSubheading}>
+      <Row justify="center" className="section-subheading">
         <p>
           Leadership are geared toward bringing out out the best in employees by
           communicating effectively about what needs to be done.

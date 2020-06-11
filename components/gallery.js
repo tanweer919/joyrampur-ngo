@@ -24,10 +24,10 @@ class Gallery extends Component {
   render() {
     return (
       <section id="gallery" className="sections">
-        <Row justify="center" className={styles.galleryHeading}>
+        <Row justify="center" className="section-heading">
           <p>Gallery</p>
         </Row>
-        <Row justify="center" className={styles.gallerySubheading}>
+        <Row justify="center" className="section-subheading">
           <p>
             We don't want to push our ideas on to customers, we simply want to
             make what they want
@@ -50,9 +50,7 @@ class Gallery extends Component {
               <Card
                 hoverable
                 className={styles.galleryCards}
-                cover={
-                  <img src="/gallery3.jpg" className={styles.image}></img>
-                }
+                cover={<img src="/gallery3.jpg" className={styles.image}></img>}
                 onClick={this.handleOpen}
               ></Card>
             </Col>
@@ -63,7 +61,7 @@ class Gallery extends Component {
           onCancel={this.handleClose}
           className={styles.galleryModal}
         >
-          <img src="/gallery3.jpg" className={styles.modalImage}/>
+          <img src="/gallery3.jpg" className={styles.modalImage} />
         </Modal>
       </section>
     );

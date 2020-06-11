@@ -68,10 +68,10 @@ const Services = () => {
   ];
   return (
     <section id="services" className="sections">
-      <Row justify="center" className={styles.servicesHeading}>
+      <Row justify="center" className="section-heading">
         <p>Our Services</p>
       </Row>
-      <Row justify="center" className={styles.servicesSubheading}>
+      <Row justify="center" className="section-subheading">
         <p>
           We don't want to push our ideas on to customers, we simply want to
           make what they want
