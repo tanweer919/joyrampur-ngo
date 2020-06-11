@@ -43,7 +43,7 @@ const Projects = () => {
     },
   ];
   return (
-    <section id="projects" className="sections">
+    <section id="projects" className="sections inverted-sections">
       <Row justify="center" className={styles.projectsHeading}>
         <p>Our Projects</p>
       </Row>

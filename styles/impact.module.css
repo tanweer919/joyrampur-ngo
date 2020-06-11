@@ -1,0 +1,17 @@
+.cardTitle {
+  font-size: 22px;
+  color: white;
+}
+.cards {
+  background-color: #01befe;
+  color: white;
+}
+.row {
+  padding: 0 10vw;
+}
+.cards :global(.ant-statistic-title) {
+  color: #ffffffd9;
+}
+.cards :global(.ant-statistic-content) {
+  color: white;
+}

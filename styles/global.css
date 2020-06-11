@@ -35,6 +35,6 @@ html {
   padding-top: 30px;
   width: 100vw;
 }
-#projects {
+.inverted-sections {
   background-color: #0e304c;
 }
