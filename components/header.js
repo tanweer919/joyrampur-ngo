@@ -27,7 +27,7 @@ const AppHeader = ({ selectedKey }) => {
           navLink.title == "About" ? (
             <SubMenu title="About" key={i} className={styles.menuItem}>
               <Menu.Item key={`${navLink.title}:1`}>
-                <Link href="/about#mission">
+                <Link href="/about">
                   <a>Our Mission</a>
                 </Link>
               </Menu.Item>
@@ -77,7 +77,7 @@ const AppHeader = ({ selectedKey }) => {
               navLink.title == "About" ? (
                 <SubMenu title="About" key={i} className={styles.menuItem}>
                   <Menu.Item key={`${navLink.title}:1`}>
-                    <Link href="/about#mission">
+                    <Link href="/about">
                       <a>Our Mission</a>
                     </Link>
                   </Menu.Item>

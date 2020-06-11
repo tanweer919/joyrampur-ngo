@@ -12,59 +12,23 @@ const Services = () => {
       imageUrl: "/certification.svg",
     },
     {
-      title: "Online Certification",
+      title: "Skill Training",
       description:
         "We are providing Online Certification. We have almost 400 institute and more than 50,000 Students got Certificate till now.",
-      imageUrl: "/certification.svg",
+      imageUrl: "/skill.svg",
     },
     {
-      title: "Online Certification",
+      title: "Job consulting",
       description:
         "We are providing Online Certification. We have almost 400 institute and more than 50,000 Students got Certificate till now.",
-      imageUrl: "/certification.svg",
+      imageUrl: "/job.svg",
     },
     {
-      title: "Online Certification",
+      title: "Education Consulting",
       description:
         "We are providing Online Certification. We have almost 400 institute and more than 50,000 Students got Certificate till now.",
-      imageUrl: "/certification.svg",
-    },
-    {
-      title: "Online Certification",
-      description:
-        "We are providing Online Certification. We have almost 400 institute and more than 50,000 Students got Certificate till now.",
-      imageUrl: "/certification.svg",
-    },
-    {
-      title: "Online Certification",
-      description:
-        "We are providing Online Certification. We have almost 400 institute and more than 50,000 Students got Certificate till now.",
-      imageUrl: "/certification.svg",
-    },
-    {
-      title: "Online Certification",
-      description:
-        "We are providing Online Certification. We have almost 400 institute and more than 50,000 Students got Certificate till now.",
-      imageUrl: "/certification.svg",
-    },
-    {
-      title: "Online Certification",
-      description:
-        "We are providing Online Certification. We have almost 400 institute and more than 50,000 Students got Certificate till now.",
-      imageUrl: "/certification.svg",
-    },
-    {
-      title: "Online Certification",
-      description:
-        "We are providing Online Certification. We have almost 400 institute and more than 50,000 Students got Certificate till now.",
-      imageUrl: "/certification.svg",
-    },
-    {
-      title: "Online Certification",
-      description:
-        "We are providing Online Certification. We have almost 400 institute and more than 50,000 Students got Certificate till now.",
-      imageUrl: "/certification.svg",
-    },
+      imageUrl: "/education.svg",
+    }
   ];
   return (
     <section id="services" className="sections">
