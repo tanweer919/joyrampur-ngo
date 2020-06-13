@@ -8,7 +8,7 @@ const Leaders = () => {
       title: "Director",
       name: "Md Sahidul Islam",
       imageUrl:
-        "https://res.cloudinary.com/doy9hqxr1/image/upload/v1591880552/joyrampurNgo/abhijit.jpg",
+        "https://res.cloudinary.com/doy9hqxr1/image/upload/q_10/v1592034130/joyrampurNgo/IMG_20200613_085900_2.jpg",
     },
     {
       title: "Treasurer",

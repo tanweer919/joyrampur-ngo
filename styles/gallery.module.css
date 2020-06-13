@@ -22,20 +22,37 @@
 }
 .modalImage {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .galleryModal :global(.ant-modal-close-x) {
   color: white;
+}
+.images {
+  object-fit: cover;
+  height: 12vw;
 }
 
 @media only screen and (max-width: 768px) {
   .galleryCards {
     width: 60vw;
   }
+  .images {
+    height: 40vw;
+  }
   .cardSection {
     padding: 0 20vw;
   }
   .galleryModal {
-    margin-top: 5vh;
+    margin-top: 20vw;
+    margin-left: 5vw;
+  }
+  .galleryModal :global(.ant-modal-content) {
+    width: 90vw;
+    height: 60vw;
+  }
+  .galleryModal :global(.ant-modal-body) {
+    height: 100%;
   }
 }
 
@@ -43,12 +60,19 @@
   .galleryCards {
     width: 20vw;
   }
+  .images {
+    height: 14vw;
+  }
   .galleryModal {
     margin-top: 10vh;
     margin-left: 15vw;
   }
   .galleryModal :global(.ant-modal-content) {
     width: 70vw;
+    height: 47vw;
+  }
+  .galleryModal :global(.ant-modal-body) {
+    height: 100%;
   }
 }
 
@@ -59,5 +83,9 @@
   }
   .galleryModal :global(.ant-modal-content) {
     width: 50vw;
+    height: 33vw;
+  }
+  .galleryModal :global(.ant-modal-body) {
+    height: 100%;
   }
 }
