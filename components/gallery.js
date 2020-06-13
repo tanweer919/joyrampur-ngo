@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Row, Col, Card, Modal } from "antd";
+import SwipeableViews from "react-swipeable-views";
 import styles from "../styles/gallery.module.css";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
@@ -13,52 +14,84 @@ class Gallery extends Component {
     this.galleryImages = [
       {
         src:
-          "https://res.cloudinary.com/doy9hqxr1/image/upload/v1591966310/joyrampurNgo/WhatsApp_Image_2020-06-10_at_8.35.08_PM.jpg",
+          "https://res.cloudinary.com/doy9hqxr1/image/upload/q_20/v1591966310/joyrampurNgo/WhatsApp_Image_2020-06-10_at_8.35.08_PM.jpg",
         alt: "Gallery 1",
       },
       {
         src:
-          "https://res.cloudinary.com/doy9hqxr1/image/upload/v1591966321/joyrampurNgo/WhatsApp_Image_2020-06-10_at_8.35.14_PM.jpg",
+          "https://res.cloudinary.com/doy9hqxr1/image/upload/q_20/v1591966321/joyrampurNgo/WhatsApp_Image_2020-06-10_at_8.35.14_PM.jpg",
         alt: "Gallery 2",
       },
       {
         src:
-          "https://res.cloudinary.com/doy9hqxr1/image/upload/v1591966323/joyrampurNgo/WhatsApp_Image_2020-06-10_at_8.41.32_PM.jpg",
+          "https://res.cloudinary.com/doy9hqxr1/image/upload/q_20/v1591966323/joyrampurNgo/WhatsApp_Image_2020-06-10_at_8.41.32_PM.jpg",
         alt: "Gallery 3",
       },
       {
         src:
-          "https://res.cloudinary.com/doy9hqxr1/image/upload/v1591966325/joyrampurNgo/WhatsApp_Image_2020-06-10_at_8.35.10_PM.jpg",
+          "https://res.cloudinary.com/doy9hqxr1/image/upload/q_20/v1591966325/joyrampurNgo/WhatsApp_Image_2020-06-10_at_8.35.10_PM.jpg",
         alt: "Gallery 4",
       },
       {
         src:
-          "https://res.cloudinary.com/doy9hqxr1/image/upload/v1591966326/joyrampurNgo/WhatsApp_Image_2020-06-10_at_8.35.14_PM_1.jpg",
+          "https://res.cloudinary.com/doy9hqxr1/image/upload/q_20/v1591966326/joyrampurNgo/WhatsApp_Image_2020-06-10_at_8.35.14_PM_1.jpg",
         alt: "Gallery 5",
       },
       {
         src:
-          "https://res.cloudinary.com/doy9hqxr1/image/upload/v1591966329/joyrampurNgo/WhatsApp_Image_2020-06-10_at_8.41.35_PM.jpg",
+          "https://res.cloudinary.com/doy9hqxr1/image/upload/q_20/v1591966329/joyrampurNgo/WhatsApp_Image_2020-06-10_at_8.41.35_PM.jpg",
         alt: "Gallery 6",
       },
       {
         src:
-          "https://res.cloudinary.com/doy9hqxr1/image/upload/v1591966330/joyrampurNgo/WhatsApp_Image_2020-06-10_at_8.35.13_PM.jpg",
+          "https://res.cloudinary.com/doy9hqxr1/image/upload/q_20/v1591966330/joyrampurNgo/WhatsApp_Image_2020-06-10_at_8.35.13_PM.jpg",
         alt: "Gallery 7",
       },
       {
         src:
-          "https://res.cloudinary.com/doy9hqxr1/image/upload/v1591966335/joyrampurNgo/WhatsApp_Image_2020-06-10_at_8.41.39_PM.jpg",
+          "https://res.cloudinary.com/doy9hqxr1/image/upload/q_20/v1591966335/joyrampurNgo/WhatsApp_Image_2020-06-10_at_8.41.39_PM.jpg",
         alt: "Gallery 8",
       },
-      { src: "", alt: "Gallery 9" },
-      { src: "", alt: "Gallery 10" },
-      { src: "", alt: "Gallery 11" },
-      { src: "", alt: "Gallery 12" },
-      { src: "", alt: "Gallery 13" },
-      { src: "", alt: "Gallery 14" },
-      { src: "", alt: "Gallery 15" },
-      { src: "", alt: "Gallery 16" },
+      {
+        src:
+          "https://res.cloudinary.com/doy9hqxr1/image/upload/q_20/v1591966337/joyrampurNgo/WhatsApp_Image_2020-06-10_at_8.41.34_PM.jpg",
+        alt: "Gallery 9",
+      },
+      {
+        src:
+          "https://res.cloudinary.com/doy9hqxr1/image/upload/q_20/v1591966340/joyrampurNgo/WhatsApp_Image_2020-06-10_at_8.41.40_PM_1.jpg",
+        alt: "Gallery 10",
+      },
+      {
+        src:
+          "https://res.cloudinary.com/doy9hqxr1/image/upload/q_20/v1591966341/joyrampurNgo/WhatsApp_Image_2020-06-10_at_8.35.11_PM.jpg",
+        alt: "Gallery 11",
+      },
+      {
+        src:
+          "https://res.cloudinary.com/doy9hqxr1/image/upload/q_20/v1591966347/joyrampurNgo/WhatsApp_Image_2020-06-10_at_8.41.42_PM.jpg",
+        alt: "Gallery 12",
+      },
+      {
+        src:
+          "https://res.cloudinary.com/doy9hqxr1/image/upload/q_20/v1591966349/joyrampurNgo/WhatsApp_Image_2020-06-10_at_8.41.41_PM.jpg",
+        alt: "Gallery 13",
+      },
+      {
+        src:
+          "https://res.cloudinary.com/doy9hqxr1/image/upload/q_20/v1591966349/joyrampurNgo/WhatsApp_Image_2020-06-10_at_8.41.40_PM.jpg",
+        alt: "Gallery 14",
+      },
+      {
+        src:
+          "https://res.cloudinary.com/doy9hqxr1/image/upload/q_20/v1591966352/joyrampurNgo/WhatsApp_Image_2020-06-10_at_8.41.43_PM_1.jpg",
+        alt: "Gallery 15",
+      },
+      {
+        src:
+          "https://res.cloudinary.com/doy9hqxr1/image/upload/q_20/v1591966355/joyrampurNgo/WhatsApp_Image_2020-06-10_at_8.41.41_PM_1.jpg",
+        alt: "Gallery 16",
+      },
     ];
   }
 
@@ -75,6 +108,7 @@ class Gallery extends Component {
     });
   };
   render() {
+    const len = this.galleryImages.length;
     return (
       <section id="gallery" className="sections">
         <Row justify="center" className="section-heading">
@@ -91,40 +125,60 @@ class Gallery extends Component {
           gutter={[12, 0]}
           className={styles.galleryIndicatorRow}
         >
-          <Col xs={{span: 6}} sm={{span: 5}} md={{span: 3}} lg={{span: 2}}>
+          <Col
+            xs={{ span: 6 }}
+            sm={{ span: 5 }}
+            md={{ span: 3 }}
+            lg={{ span: 2 }}
+          >
             <div
               className={`${styles.galleryIndicator} ${styles.activeGalleryIndicator}`}
             ></div>
           </Col>
-          <Col xs={{span: 6}} sm={{span: 5}} md={{span: 3}} lg={{span: 2}}>
+          <Col
+            xs={{ span: 6 }}
+            sm={{ span: 5 }}
+            md={{ span: 3 }}
+            lg={{ span: 2 }}
+          >
             <div className={styles.galleryIndicator}></div>
           </Col>
         </Row>
-        <Row
-          justify="center"
-          align="middle"
-          gutter={[{ sm: 0, md: 8, lg: 8 }, 24]}
-          className={styles.cardSection}
-        >
-          {this.galleryImages.map((image, i) => (
-            <Col
-              xs={{ span: 24 }}
-              sm={{ span: 24 }}
-              md={{ span: 8 }}
-              lg={{ span: 6 }}
+        <SwipeableViews enableMouseEvents>
+          {[...Array(len / 8)].map((e, i) => (
+            <Row
+              justify="center"
+              align="middle"
+              gutter={[{ sm: 0, md: 8, lg: 8 }, 24]}
+              className={styles.cardSection}
               key={i}
             >
-              <Card
-                hoverable
-                className={styles.galleryCards}
-                cover={
-                  <LazyLoadImage src={image.src} className={styles.images} />
-                }
-                onClick={() => this.handleOpen(image.src)}
-              ></Card>
-            </Col>
+              {this.galleryImages
+                .slice(i * 8, len < 8 * (i + 1) ? len : 8 * (i + 1))
+                .map((image, j) => (
+                  <Col
+                    xs={{ span: 24 }}
+                    sm={{ span: 24 }}
+                    md={{ span: 8 }}
+                    lg={{ span: 6 }}
+                    key={i * 8 + j}
+                  >
+                    <Card
+                      hoverable
+                      className={styles.galleryCards}
+                      cover={
+                        <LazyLoadImage
+                          src={image.src}
+                          className={styles.images}
+                        />
+                      }
+                      onClick={() => this.handleOpen(image.src)}
+                    ></Card>
+                  </Col>
+                ))}
+            </Row>
           ))}
-        </Row>
+        </SwipeableViews>
         <Modal
           visible={this.state.modalVisible}
           onCancel={this.handleClose}
