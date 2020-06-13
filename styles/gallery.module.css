@@ -6,7 +6,7 @@
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.15);
 }
 .cardSection {
-  padding: 0 5vw;
+  padding: 0;
 }
 .galleryCards :global(.ant-card-body) {
   padding: 0;
@@ -38,13 +38,13 @@ img.images {
 
 @media only screen and (max-width: 768px) {
   .galleryCards {
-    width: 60vw;
+    width: 50vw;
   }
   .images {
     height: 40vw;
   }
   .cardSection {
-    padding: 0 20vw;
+    padding: 0 0;
   }
   .galleryModal {
     margin-top: 20vw;

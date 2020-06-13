@@ -145,19 +145,19 @@ class Gallery extends Component {
             <div className={styles.galleryIndicator}></div>
           </Col>
         </Row>
-        <Row justify="space-between" align="middle">
+        <Row justify="center" align="middle">
           <Col
-            xs={{ span: 5 }}
-            sm={{ span: 5 }}
-            md={{ span: 4 }}
+            xs={{ span: 3 }}
+            sm={{ span: 3 }}
+            md={{ span: 2 }}
             lg={{ span: 2 }}
           >
-            <LeftOutlined />
+            <LeftOutlined style={{ fontSize: "70px" }}></LeftOutlined>
           </Col>
           <Col
-            xs={{ span: 14 }}
-            sm={{ span: 14 }}
-            md={{ span: 16 }}
+            xs={{ span: 16 }}
+            sm={{ span: 16 }}
+            md={{ span: 20 }}
             lg={{ span: 20 }}
           >
             <SwipeableViews enableMouseEvents>
@@ -173,8 +173,8 @@ class Gallery extends Component {
                     .slice(i * 8, len < 8 * (i + 1) ? len : 8 * (i + 1))
                     .map((image, j) => (
                       <Col
-                        xs={{ span: 24 }}
-                        sm={{ span: 24 }}
+                        xs={{ span: 18 }}
+                        sm={{ span: 18 }}
                         md={{ span: 8 }}
                         lg={{ span: 6 }}
                         key={i * 8 + j}
@@ -197,12 +197,12 @@ class Gallery extends Component {
             </SwipeableViews>
           </Col>
           <Col
-            xs={{ span: 5 }}
-            sm={{ span: 5 }}
-            md={{ span: 4 }}
+            xs={{ span: 3 }}
+            sm={{ span: 3 }}
+            md={{ span: 2 }}
             lg={{ span: 2 }}
           >
-            <RightOutlined />
+            <RightOutlined style={{ fontSize: "70px" }} />
           </Col>
         </Row>
         <Modal
