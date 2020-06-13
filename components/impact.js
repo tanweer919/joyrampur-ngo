@@ -59,7 +59,14 @@ const Impact = () => {
         className={styles.row}
       >
         {stats.map((stat) => (
-          <StatisticCard stat={stat} />
+          <StatisticCard
+            title={stat.title}
+            stat={(({ registered, certified, placement }) => ({
+              registered,
+              certified,
+              placement,
+            }))(stat)}
+          />
         ))}
       </Row>
     </section>
