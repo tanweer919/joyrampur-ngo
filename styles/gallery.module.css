@@ -60,13 +60,20 @@ img.images {
 }
 .galleryIndicator {
   height: 3px;
-  background-color: #1890ff;
+  background-color: black;
 }
 .galleryIndicator.activeGalleryIndicator {
-  background-color: black;
+  background-color: #1890ff;
 }
 .galleryIndicatorRow {
   margin: 15px 0;
+}
+.galleryIcons {
+  font-size: 70px;
+  transition: color 0.5s;
+}
+.galleryIcons:hover {
+  color: #1890ff;
 }
 
 @media only screen and (min-width: 769px) and (max-width: 992px) {

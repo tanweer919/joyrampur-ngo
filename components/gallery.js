@@ -11,6 +11,7 @@ class Gallery extends Component {
     this.state = {
       modalVisible: false,
       currentImage: "",
+      galleryIndex: 0,
     };
     this.galleryImages = [
       {
@@ -94,6 +95,8 @@ class Gallery extends Component {
         alt: "Gallery 16",
       },
     ];
+    this.len = this.galleryImages.length;
+    this.numberofIndex = this.len / 8;
   }
 
   handleClose = (e) => {
@@ -108,8 +111,26 @@ class Gallery extends Component {
       currentImage: src,
     });
   };
+  handleMoveRight = (e) => {
+    if (this.state.galleryIndex < this.numberofIndex - 1) {
+      const index = this.state.galleryIndex + 1;
+      this.setState({
+        galleryIndex: index,
+      });
+    }
+  };
+  handleMoveLeft = (e) => {
+    if (this.state.galleryIndex != 0) {
+      const index = this.state.galleryIndex - 1;
+      this.setState({
+        galleryIndex: index,
+      });
+    }
+  };
+  handleSwipe = index => {
+    this.setState({galleryIndex: index})
+  }
   render() {
-    const len = this.galleryImages.length;
     return (
       <section id="gallery" className="sections">
         <Row justify="center" className="section-heading">
@@ -126,24 +147,23 @@ class Gallery extends Component {
           gutter={[12, 0]}
           className={styles.galleryIndicatorRow}
         >
-          <Col
-            xs={{ span: 6 }}
-            sm={{ span: 5 }}
-            md={{ span: 3 }}
-            lg={{ span: 2 }}
-          >
-            <div
-              className={`${styles.galleryIndicator} ${styles.activeGalleryIndicator}`}
-            ></div>
-          </Col>
-          <Col
-            xs={{ span: 6 }}
-            sm={{ span: 5 }}
-            md={{ span: 3 }}
-            lg={{ span: 2 }}
-          >
-            <div className={styles.galleryIndicator}></div>
-          </Col>
+          {[...Array(this.numberofIndex)].map((e, i) => (
+            <Col
+              xs={{ span: 6 }}
+              sm={{ span: 5 }}
+              md={{ span: 3 }}
+              lg={{ span: 2 }}
+            >
+              <div
+                className={
+                  styles.galleryIndicator +
+                  (this.state.galleryIndex == i
+                    ? ` ${styles.activeGalleryIndicator}`
+                    : ``)
+                }
+              ></div>
+            </Col>
+          ))}
         </Row>
         <Row justify="center" align="middle">
           <Col
@@ -152,7 +172,10 @@ class Gallery extends Component {
             md={{ span: 2 }}
             lg={{ span: 2 }}
           >
-            <LeftOutlined style={{ fontSize: "70px" }}></LeftOutlined>
+            <LeftOutlined
+              className={styles.galleryIcons}
+              onClick={this.handleMoveLeft}
+            ></LeftOutlined>
           </Col>
           <Col
             xs={{ span: 16 }}
@@ -160,8 +183,8 @@ class Gallery extends Component {
             md={{ span: 20 }}
             lg={{ span: 20 }}
           >
-            <SwipeableViews enableMouseEvents>
-              {[...Array(len / 8)].map((e, i) => (
+            <SwipeableViews index={this.state.galleryIndex} onChangeIndex={this.handleSwipe}>
+              {[...Array(this.numberofIndex)].map((e, i) => (
                 <Row
                   justify="center"
                   align="middle"
@@ -170,7 +193,7 @@ class Gallery extends Component {
                   key={i}
                 >
                   {this.galleryImages
-                    .slice(i * 8, len < 8 * (i + 1) ? len : 8 * (i + 1))
+                    .slice(i * 8, this.len < 8 * (i + 1) ? this.len : 8 * (i + 1))
                     .map((image, j) => (
                       <Col
                         xs={{ span: 18 }}
@@ -202,7 +225,10 @@ class Gallery extends Component {
             md={{ span: 2 }}
             lg={{ span: 2 }}
           >
-            <RightOutlined style={{ fontSize: "70px" }} />
+            <RightOutlined
+              className={styles.galleryIcons}
+              onClick={this.handleMoveRight}
+            />
           </Col>
         </Row>
         <Modal
