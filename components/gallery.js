@@ -8,7 +8,7 @@ class Gallery extends Component {
     super(props);
     this.state = {
       modalVisible: false,
-      currentImage: ""
+      currentImage: "",
     };
     this.galleryImages = [
       {
@@ -51,14 +51,14 @@ class Gallery extends Component {
           "https://res.cloudinary.com/doy9hqxr1/image/upload/v1591966335/joyrampurNgo/WhatsApp_Image_2020-06-10_at_8.41.39_PM.jpg",
         alt: "Gallery 8",
       },
-      // { src: "", alt: "Gallery 9" },
-      // { src: "", alt: "Gallery 10" },
-      // { src: "", alt: "Gallery 11" },
-      // { src: "", alt: "Gallery 12" },
-      // { src: "", alt: "Gallery 13" },
-      // { src: "", alt: "Gallery 14" },
-      // { src: "", alt: "Gallery 15" },
-      // { src: "", alt: "Gallery 16" },
+      { src: "", alt: "Gallery 9" },
+      { src: "", alt: "Gallery 10" },
+      { src: "", alt: "Gallery 11" },
+      { src: "", alt: "Gallery 12" },
+      { src: "", alt: "Gallery 13" },
+      { src: "", alt: "Gallery 14" },
+      { src: "", alt: "Gallery 15" },
+      { src: "", alt: "Gallery 16" },
     ];
   }
 
@@ -71,7 +71,7 @@ class Gallery extends Component {
   handleOpen = (src) => {
     this.setState({
       modalVisible: true,
-      currentImage: src
+      currentImage: src,
     });
   };
   render() {
@@ -85,6 +85,20 @@ class Gallery extends Component {
             We don't want to push our ideas on to customers, we simply want to
             make what they want
           </p>
+        </Row>
+        <Row
+          justify="center"
+          gutter={[12, 0]}
+          className={styles.galleryIndicatorRow}
+        >
+          <Col xs={{span: 6}} sm={{span: 5}} md={{span: 3}} lg={{span: 2}}>
+            <div
+              className={`${styles.galleryIndicator} ${styles.activeGalleryIndicator}`}
+            ></div>
+          </Col>
+          <Col xs={{span: 6}} sm={{span: 5}} md={{span: 3}} lg={{span: 2}}>
+            <div className={styles.galleryIndicator}></div>
+          </Col>
         </Row>
         <Row
           justify="center"
@@ -104,10 +118,7 @@ class Gallery extends Component {
                 hoverable
                 className={styles.galleryCards}
                 cover={
-                  <LazyLoadImage
-                    src={image.src}
-                    className={styles.images}
-                  />
+                  <LazyLoadImage src={image.src} className={styles.images} />
                 }
                 onClick={() => this.handleOpen(image.src)}
               ></Card>
