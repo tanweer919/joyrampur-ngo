@@ -32,6 +32,9 @@
   object-fit: cover;
   height: 12vw;
 }
+img.images {
+  border-radius: 8%;
+}
 
 @media only screen and (max-width: 768px) {
   .galleryCards {
