@@ -3,6 +3,7 @@ import { Row, Col, Card, Modal } from "antd";
 import SwipeableViews from "react-swipeable-views";
 import styles from "../styles/gallery.module.css";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 
 class Gallery extends Component {
   constructor(props) {
@@ -144,41 +145,66 @@ class Gallery extends Component {
             <div className={styles.galleryIndicator}></div>
           </Col>
         </Row>
-        <SwipeableViews enableMouseEvents>
-          {[...Array(len / 8)].map((e, i) => (
-            <Row
-              justify="center"
-              align="middle"
-              gutter={[{ sm: 0, md: 8, lg: 8 }, 24]}
-              className={styles.cardSection}
-              key={i}
-            >
-              {this.galleryImages
-                .slice(i * 8, len < 8 * (i + 1) ? len : 8 * (i + 1))
-                .map((image, j) => (
-                  <Col
-                    xs={{ span: 24 }}
-                    sm={{ span: 24 }}
-                    md={{ span: 8 }}
-                    lg={{ span: 6 }}
-                    key={i * 8 + j}
-                  >
-                    <Card
-                      hoverable
-                      className={styles.galleryCards}
-                      cover={
-                        <LazyLoadImage
-                          src={image.src}
-                          className={styles.images}
-                        />
-                      }
-                      onClick={() => this.handleOpen(image.src)}
-                    ></Card>
-                  </Col>
-                ))}
-            </Row>
-          ))}
-        </SwipeableViews>
+        <Row justify="space-between" align="middle">
+          <Col
+            xs={{ span: 5 }}
+            sm={{ span: 5 }}
+            md={{ span: 4 }}
+            lg={{ span: 2 }}
+          >
+            <LeftOutlined />
+          </Col>
+          <Col
+            xs={{ span: 14 }}
+            sm={{ span: 14 }}
+            md={{ span: 16 }}
+            lg={{ span: 20 }}
+          >
+            <SwipeableViews enableMouseEvents>
+              {[...Array(len / 8)].map((e, i) => (
+                <Row
+                  justify="center"
+                  align="middle"
+                  gutter={[{ sm: 0, md: 8, lg: 8 }, 24]}
+                  className={styles.cardSection}
+                  key={i}
+                >
+                  {this.galleryImages
+                    .slice(i * 8, len < 8 * (i + 1) ? len : 8 * (i + 1))
+                    .map((image, j) => (
+                      <Col
+                        xs={{ span: 24 }}
+                        sm={{ span: 24 }}
+                        md={{ span: 8 }}
+                        lg={{ span: 6 }}
+                        key={i * 8 + j}
+                      >
+                        <Card
+                          hoverable
+                          className={styles.galleryCards}
+                          cover={
+                            <LazyLoadImage
+                              src={image.src}
+                              className={styles.images}
+                            />
+                          }
+                          onClick={() => this.handleOpen(image.src)}
+                        ></Card>
+                      </Col>
+                    ))}
+                </Row>
+              ))}
+            </SwipeableViews>
+          </Col>
+          <Col
+            xs={{ span: 5 }}
+            sm={{ span: 5 }}
+            md={{ span: 4 }}
+            lg={{ span: 2 }}
+          >
+            <RightOutlined />
+          </Col>
+        </Row>
         <Modal
           visible={this.state.modalVisible}
           onCancel={this.handleClose}
