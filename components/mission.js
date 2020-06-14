@@ -10,25 +10,25 @@ const Mission = () => {
         working in the field of education with Registration No : S/1L/70517.
       </p>{" "}
       <p>
-        Our mission is to promote student achievement and preparation for global
-        competitiveness by fostering educational excellence and ensuring equal
-        access.
+        Following are the missions, we are trying to achieve through our
+        organisation:
       </p>{" "}
-      <p>
-        Our mission is to empower all students to apply their acquired skills
-        and knowledge, and to rely upon their personal attributes to lead
-        productive lives and to become contributing members of the global
-        community.
-      </p>{" "}
-      <p>
-        Our mission is to provide a high-quality, comprehensive, and meaningful
-        education for all students. Each student will be expected to succeed
-        within the bounds of their abilities and chosen educational goals. Each
-        student will be treated as an individual, given the tools to be a
-        lifelong learner, and taught to function as a member of a group and as a
-        productive member of society.
-      </p>
-      <p>Our Mission is to make education Enjoyable and fun.</p>
+      <ul>
+        <li>To make education enjoyable and fun.</li>
+        <li>
+          To empower all students to apply their acquired skills and knowledge,
+          and to rely upon their personal attributes to lead productive lives
+          and to become contributing members of the global community.
+        </li>
+        <li>
+          To provide a high-quality, comprehensive, and meaningful education for
+          all students. Each student will be expected to succeed within the
+          bounds of their abilities and chosen educational goals. Each student
+          will be treated as an individual, given the tools to be a lifelong
+          learner, and taught to function as a member of a group and as a
+          productive member of society.
+        </li>
+      </ul>
     </div>
   );
   return (

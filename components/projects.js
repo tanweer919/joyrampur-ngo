@@ -8,19 +8,19 @@ const Projects = () => {
     {
       title: "PMKVY CSSM (2018-2019)",
       description:
-        "We teach small children about the naunces of web development ad its related fields. This project includes both frontend development and backend development.",
+        "The PMKVY 2 (including both CSCM and CSSM components) is a National Skill Qualification Framework (NSQF) aligned scheme. It also fully adheres to common norms of the MSDE. ",
       imageUrl: "/pmkvy.png",
     },
     {
       title: "UTKARSH BANGLA",
       description:
-        "We teach small children about the naunces of web development ad its related fields. This project includes both frontend development and backend development.",
+        "West Bengal government has launched the Utkarsh Bangla Scheme with an aim of providing vocational training to school dropouts. The scheme was launche",
       imageUrl: "/utkarsh.png",
     },
     {
       title: "NDLM(National Digital Literacy Mission)",
       description:
-        "We teach small children about the naunces of web development ad its related fields. This project includes both frontend development and backend development.",
+        "NDLM is an effort to complement government's vision to transform one from each household as digitally literate. The project aims at helping adults with low technological literacy develop the skills they need to interact in an increasingly digital world.",
       imageUrl: "/ndlm.jpg",
     },
   ];

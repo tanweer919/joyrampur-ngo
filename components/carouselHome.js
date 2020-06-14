@@ -11,7 +11,7 @@ const CarouselHome = () => {
           className={styles.carouselImage}
         ></img>
         <img
-          src="https://res.cloudinary.com/doy9hqxr1/image/upload/v1591966295/joyrampurNgo/WhatsApp_Image_2020-06-10_at_8.35.12_PM.jpg"
+          src="https://res.cloudinary.com/doy9hqxr1/image/upload/v1591966325/joyrampurNgo/WhatsApp_Image_2020-06-10_at_8.35.10_PM.jpg"
           className={styles.carouselImage}
         ></img>
         <img
