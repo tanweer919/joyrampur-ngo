@@ -6,10 +6,22 @@ const CarouselHome = () => {
   return (
     <section id="carousel">
       <Carousel autoplay>
-        <img src="/gallery1.jpg" className={styles.carouselImage}></img>
-        <img src="/gallery2.jpg" className={styles.carouselImage}></img>
-        <img src="/gallery3.jpg" className={styles.carouselImage}></img>
-        <img src="/banner.png" className={styles.carouselImage}></img>
+        <img
+          src="https://res.cloudinary.com/doy9hqxr1/image/upload/v1591966296/joyrampurNgo/WhatsApp_Image_2020-06-10_at_8.33.24_PM.jpg"
+          className={styles.carouselImage}
+        ></img>
+        <img
+          src="https://res.cloudinary.com/doy9hqxr1/image/upload/v1591966295/joyrampurNgo/WhatsApp_Image_2020-06-10_at_8.35.12_PM.jpg"
+          className={styles.carouselImage}
+        ></img>
+        <img
+          src="https://res.cloudinary.com/doy9hqxr1/image/upload/v1591966321/joyrampurNgo/WhatsApp_Image_2020-06-10_at_8.35.14_PM.jpg"
+          className={styles.carouselImage}
+        ></img>
+        <img
+          src="https://res.cloudinary.com/doy9hqxr1/image/upload/v1591966335/joyrampurNgo/WhatsApp_Image_2020-06-10_at_8.41.39_PM.jpg"
+          className={styles.carouselImage}
+        ></img>
       </Carousel>
     </section>
   );
