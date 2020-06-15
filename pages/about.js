@@ -6,6 +6,7 @@ import { HomeOutlined } from "@ant-design/icons";
 import Mission from "../components/mission";
 import Leaders from "../components/leaders";
 import Impact from "../components/impact";
+import Link from "next/link";
 const About = () => {
   return (
     <>
@@ -15,10 +16,12 @@ const About = () => {
       <Layout selectedKey={"About:1"}>
         <div className="breadcrumb">
           <Breadcrumb>
-            <Breadcrumb.Item href="">
-              <HomeOutlined />
+            <Breadcrumb.Item>
+              <Link href="/">
+                <HomeOutlined />
+              </Link>
             </Breadcrumb.Item>
-            <Breadcrumb.Item href="">About</Breadcrumb.Item>
+            <Breadcrumb.Item>About</Breadcrumb.Item>
           </Breadcrumb>
         </div>
         <Mission />

@@ -4,6 +4,7 @@ import Layout from "../components/layout";
 import { Breadcrumb } from "antd";
 import { HomeOutlined } from "@ant-design/icons";
 import ContactCards from "../components/contactCards";
+import Link from "next/link";
 const Contact = () => {
   return (
     <>
@@ -13,10 +14,12 @@ const Contact = () => {
       <Layout selectedKey={3}>
         <div className="breadcrumb">
           <Breadcrumb>
-            <Breadcrumb.Item href="">
-              <HomeOutlined />
+            <Breadcrumb.Item>
+              <Link href="/">
+                <HomeOutlined />
+              </Link>
             </Breadcrumb.Item>
-            <Breadcrumb.Item href="">Contact Us</Breadcrumb.Item>
+            <Breadcrumb.Item>Contact Us</Breadcrumb.Item>
           </Breadcrumb>
         </div>
         <ContactCards />

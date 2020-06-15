@@ -6,6 +6,7 @@ import Projects from "../components/projects";
 import Gallery from "../components/gallery";
 import { Breadcrumb } from "antd";
 import { HomeOutlined } from "@ant-design/icons";
+import Link from "next/link";
 
 const Home = () => {
   return (
@@ -16,10 +17,12 @@ const Home = () => {
       <Layout selectedKey={0}>
         <div className="breadcrumb">
           <Breadcrumb>
-            <Breadcrumb.Item href="">
-              <HomeOutlined />
+            <Breadcrumb.Item>
+              <Link href="/">
+                <HomeOutlined />
+              </Link>
             </Breadcrumb.Item>
-            <Breadcrumb.Item href="">Home</Breadcrumb.Item>
+            <Breadcrumb.Item>Home</Breadcrumb.Item>
           </Breadcrumb>
         </div>
         <CarouselHome />
