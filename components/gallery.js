@@ -153,6 +153,7 @@ class Gallery extends Component {
               sm={{ span: 5 }}
               md={{ span: 3 }}
               lg={{ span: 2 }}
+              key={i}
             >
               <div
                 className={

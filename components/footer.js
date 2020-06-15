@@ -30,7 +30,7 @@ const AppFooter = () => {
     },
     {
       icon: <MailFilled style={{ fontSize: "20px", color: "#50C878" }} />,
-      contact: " joyrampur@gmail.com",
+      contact: " joyrampursociety@gmail.com",
     },
   ];
   const { Footer } = Layout;

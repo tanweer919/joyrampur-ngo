@@ -1,0 +1,30 @@
+.contactCard {
+  border: 2px black solid;
+  color: black;
+  min-height: fit-content;
+  padding: 5px 0;
+}
+.contactCard:hover {
+  border: 2px #01befe solid;
+  background-color: #01befe;
+  color: white;
+}
+.contactsRow {
+  padding: 0 10vw;
+}
+.contactDetailsRow {
+  flex-direction: column;
+  padding: 5px;
+}
+.contactIcon {
+  padding: 5px;
+}
+.contactTitle {
+  font-size: 16px;
+}
+.contactValue {
+  font-size: 18px;
+}
+.contactCardRow {
+  flex-wrap: nowrap;
+}
