@@ -10,6 +10,7 @@ const Contact = () => {
     <>
       <Head>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <title>Contact Us</title>
       </Head>
       <Layout selectedKey={3}>
         <div className="breadcrumb">

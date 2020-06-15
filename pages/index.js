@@ -13,6 +13,7 @@ const Home = () => {
     <>
       <Head>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <title>Joyrampur Society</title>
       </Head>
       <Layout selectedKey={0}>
         <div className="breadcrumb">

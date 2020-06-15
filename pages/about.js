@@ -12,6 +12,7 @@ const About = () => {
     <>
       <Head>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <title>About Us</title>
       </Head>
       <Layout selectedKey={"About:1"}>
         <div className="breadcrumb">
@@ -21,7 +22,7 @@ const About = () => {
                 <HomeOutlined />
               </Link>
             </Breadcrumb.Item>
-            <Breadcrumb.Item>About</Breadcrumb.Item>
+            <Breadcrumb.Item>About Us</Breadcrumb.Item>
           </Breadcrumb>
         </div>
         <Mission />
