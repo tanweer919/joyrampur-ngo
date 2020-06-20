@@ -22,3 +22,10 @@
 .links a:hover {
   color: #2a8ef7;
 }
+.socialLink {
+  color: white;
+  text-decoration: none;
+}
+.socialLink:hover {
+  color: #2a8ef7;
+}

@@ -2,6 +2,7 @@ import React from "react";
 import { Layout, Row, Col } from "antd";
 import Link from "next/link";
 import styles from "../styles/footer.module.css";
+import info from "../data/info.json";
 import {
   BankFilled,
   MailFilled,
@@ -21,16 +22,15 @@ const AppFooter = () => {
   const contacts = [
     {
       icon: <BankFilled style={{ fontSize: "20px", color: "#50C878" }} />,
-      contact:
-        " Reg. Office-Joyrampur, Post-Bhabanipur,District-Murshidabad, West Bengal, Pin-742202",
+      contact: ` ${info.address}`,
     },
     {
       icon: <PhoneOutlined style={{ fontSize: "20px", color: "#50C878" }} />,
-      contact: " 8617607175",
+      contact: ` ${info.phone}`,
     },
     {
       icon: <MailFilled style={{ fontSize: "20px", color: "#50C878" }} />,
-      contact: " joyrampursociety@gmail.com",
+      contact: ` ${info.email}`,
     },
   ];
   const { Footer } = Layout;
@@ -51,12 +51,7 @@ const AppFooter = () => {
             <img src="/vercel.svg" width="100px" />
           </div>
           <div className={styles.description}>
-            <p>
-              JOYRAMPUR MODERN EDUCATION AND CHARITABLE SOCIETY is an ISO
-              900-2015 Certified Company with an initiative to support the youth
-              of the world in their time of need, and work towards a greater
-              good.
-            </p>
+            <p>{info.description}</p>
           </div>
         </Col>
         <Col
@@ -97,9 +92,11 @@ const AppFooter = () => {
           <div className={styles.colHeading}>FOLLOW US</div>
           <div>
             <FacebookFilled style={{ fontSize: "35px", marginRight: "5px" }} />
-            <TwitterSquareFilled
-              style={{ fontSize: "35px", marginRight: "5px" }}
-            />
+            <a href={info.twitter} className={styles.socialLink}>
+              <TwitterSquareFilled
+                style={{ fontSize: "35px", marginRight: "5px" }}
+              />
+            </a>
             <LinkedinFilled style={{ fontSize: "35px", marginRight: "5px" }} />
           </div>
         </Col>
