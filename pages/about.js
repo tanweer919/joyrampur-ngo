@@ -12,7 +12,7 @@ import info from "../data/info.json";
 const About = () => {
   const seo = {
     twitterHandle: info.twitter,
-    currentUrl: "https://joyrampur-ngo.now.sh/about",
+    currentUrl: `${info.baseUrl}/about`,
     pageTitle: "About Us",
     siteName: "Joyrampur Modern Education and Charitable Society",
     description: "About Page",
