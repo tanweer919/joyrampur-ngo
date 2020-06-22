@@ -19,9 +19,10 @@ class MyDocument extends Document {
           />
           <meta name="apple-mobile-web-app-title" content="JME" />
           <meta
-            name="description"
-            content="JOYRAMPUR MODERN EDUCATION AND CHARITABLE SOCIETY"
-          />
+            name="keywords"
+            content="Joyrampur, Joyrampur Society, JOYRAMPUR MODERN EDUCATION AND CHARITABLE SOCIETY, Joyrampur Modern Education and Charitable Society, Joyrampur Modern Education, Utkarsh, ndlm, Projects, Education, Skill development"
+          ></meta>
+          <meta name="description" content={info.description} />
           <meta name="format-detection" content="telephone=no" />
           <meta name="mobile-web-app-capable" content="yes" />
           <meta
