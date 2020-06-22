@@ -61,7 +61,7 @@ const AppHeader = ({ selectedKey }) => {
         align="middle"
         gutter={{ sm: 0, md: 24, lg: 8 }}
       >
-        <Col xs={{ span: 22 }} sm={{ span: 22 }} md={{ span: 4 }}>
+        <Col xs={{ span: 20 }} sm={{ span: 20 }} md={{ span: 4 }}>
           <Row justify="center" align="middle">
             <img src="/logo.png" width={100} alt="Brand Logo" />
           </Row>
@@ -102,7 +102,7 @@ const AppHeader = ({ selectedKey }) => {
             )}
           </Menu>
         </Col>
-        <Col xs={{ span: 2 }} sm={{ span: 2 }} md={{ span: 0 }}>
+        <Col xs={{ span: 4 }} sm={{ span: 4 }} md={{ span: 0 }} className={styles.hamburgerIcon}>
           <Popover
             placement="bottomRight"
             trigger="click"

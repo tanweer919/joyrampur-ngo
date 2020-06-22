@@ -17,6 +17,9 @@
   color: black;
   font-size: 1.1rem;
 }
+.hamburgerIcon {
+  padding-right: 5px;
+}
 .navbarPopover :global(.ant-popover-inner-content) {
   padding: 0;
   width: 50vw;
