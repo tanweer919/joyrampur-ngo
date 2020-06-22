@@ -21,6 +21,7 @@ const CarouselHome = () => {
         {carouselImages.map((imageSrc, i) => (
           <img
             src={imageSrc}
+            alt={`Carousel image ${i+1}`}
             key={i}
             className={styles.carouselImage}
             onClick={() => {

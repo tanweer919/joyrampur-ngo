@@ -63,7 +63,7 @@ const AppHeader = ({ selectedKey }) => {
       >
         <Col xs={{ span: 22 }} sm={{ span: 22 }} md={{ span: 4 }}>
           <Row justify="center" align="middle">
-            <img src="/vercel.svg" width={128} alt="Brand Logo" />
+            <img src="/logo.png" width={100} alt="Brand Logo" />
           </Row>
         </Col>
         <Col xs={{ span: 0 }} sm={{ span: 0 }} md={{ span: 20 }}>
@@ -109,7 +109,7 @@ const AppHeader = ({ selectedKey }) => {
             content={content}
             overlayClassName={styles.navbarPopover}
           >
-            <UnorderedListOutlined style={{ fontSize: "16px" }} />
+            <UnorderedListOutlined style={{ fontSize: "20px" }} />
           </Popover>
         </Col>
       </Row>

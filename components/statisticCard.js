@@ -14,7 +14,7 @@ const StatisticCard = ({ stat, title }) => {
         <Row gutter={[24, 24]}>
           {Object.keys(stat).map((key, i) =>
             stat[key] != null ? (
-              <Col>
+              <Col key={i}>
                 <Statistic
                   title={titles[i]}
                   value={
@@ -41,7 +41,7 @@ const StatisticCard = ({ stat, title }) => {
                 ></Statistic>
               </Col>
             ) : (
-              <></>
+              <React.Fragment key={i} ></React.Fragment >
             )
           )}
         </Row>

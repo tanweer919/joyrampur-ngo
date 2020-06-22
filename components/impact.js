@@ -58,7 +58,7 @@ const Impact = () => {
         gutter={[{ sm: 0, md: 24, lg: 24 }, 48]}
         className={styles.row}
       >
-        {stats.map((stat) => (
+        {stats.map((stat, i) => (
           <StatisticCard
             title={stat.title}
             stat={(({ registered, certified, placement }) => ({
@@ -66,6 +66,7 @@ const Impact = () => {
               certified,
               placement,
             }))(stat)}
+            key={i}
           />
         ))}
       </Row>

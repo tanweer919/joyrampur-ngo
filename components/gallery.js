@@ -237,7 +237,7 @@ class Gallery extends Component {
           onCancel={this.handleClose}
           className={styles.galleryModal}
         >
-          <img src={this.state.currentImage} className={styles.modalImage} />
+          <img src={this.state.currentImage} className={styles.modalImage} alt="Modal image" />
         </Modal>
       </section>
     );

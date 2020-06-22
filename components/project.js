@@ -7,7 +7,7 @@ const Project = ({ project }) => {
   return (
     <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 12 }} lg={{ span: 8 }}>
       <Card
-        cover={<img src={project.imageUrl} alt={project.title} height="250px" />}
+        cover={<img src={project.imageUrl} alt={project.title} height="250px" alt="Project image" />}
         className={styles.projectCard}
         hoverable
       >

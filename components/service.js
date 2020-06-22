@@ -7,7 +7,11 @@ const Service = ({ service }) => {
       <Card hoverable className={styles.cards}>
         <Row justify="center" align="middle" className={styles.cardRow}>
           <Col className={styles.cardImage}>
-            <img src={service.imageUrl} className={styles.images}></img>
+            <img
+              src={service.imageUrl}
+              className={styles.images}
+              alt="Service image"
+            ></img>
           </Col>
           <Col>
             <Row

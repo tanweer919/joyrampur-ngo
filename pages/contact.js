@@ -5,37 +5,12 @@ import { Breadcrumb } from "antd";
 import { HomeOutlined } from "@ant-design/icons";
 import ContactCards from "../components/contactCards";
 import Link from "next/link";
-import info from "../data/info.json";
 
 const Contact = () => {
-  const seo = {
-    twitterHandle: info.twitter,
-    currentUrl: `${info.baseUrl}/contact`,
-    pageTitle: "Contact Us",
-    siteName: "Joyrampur Modern Education and Charitable Society",
-    description: "Contact PAge",
-  };
   return (
     <>
       <Head>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="twitter:card" content="summary" key="twcard" />
-        <meta
-          name="twitter:creator"
-          content={seo.twitterHandle}
-          key="twhandle"
-        />
-
-        {/* Open Graph */}
-        <meta property="og:url" content={seo.currentUrl} key="ogurl" />
-        <meta property="og:site_name" content={seo.siteName} key="ogsitename" />
-        <meta property="og:title" content={seo.pageTitle} key="ogtitle" />
-        <meta
-          property="og:description"
-          content={seo.description}
-          key="ogdesc"
-        />
-        <title>{seo.pageTitle}</title>
+        <title>Contact Us</title>
       </Head>
       <Layout selectedKey={3}>
         <div className="breadcrumb">

@@ -46,15 +46,12 @@ const Leaders = () => {
             sm={{ span: 24 }}
             md={{ span: 12 }}
             lg={{ span: 8 }}
+            key={i}
           >
             <Card hoverable className={styles.leaderCard}>
-              <Row
-                justify="center"
-                align="middle"
-                className={styles.leaderRow}
-              >
+              <Row justify="center" align="middle" className={styles.leaderRow}>
                 <Col>
-                  <Avatar src={leader.imageUrl} className={styles.avatar}/>
+                  <Avatar src={leader.imageUrl} className={styles.avatar} />
                 </Col>
                 <Col className={styles.leaderTitle}>{leader.title}</Col>
                 <Col className={styles.leaderName}>{leader.name}</Col>
