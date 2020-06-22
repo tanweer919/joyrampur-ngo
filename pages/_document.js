@@ -9,7 +9,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html lang="en" dir="ltr">
         <Head>
           <meta name="application-name" content="Joyrampur Society" />
           <meta name="apple-mobile-web-app-capable" content="yes" />
