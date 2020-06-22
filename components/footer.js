@@ -48,7 +48,7 @@ const AppFooter = () => {
           lg={{ span: 6 }}
         >
           <div>
-            <img src="/logo.png" width="100px"  alt="Brand logo"/>
+            <img src="/logo-dark.png" width="100px" alt="Brand logo" />
           </div>
           <div className={styles.description}>
             <p>{info.description}</p>
